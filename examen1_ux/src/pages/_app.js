@@ -1,5 +1,17 @@
-import "@/styles/globals.css";
+import React from 'react';
+import NavbarComponent from '../components/NavbarComponent';
+import CarouselComponent from '../components/CarouselComponent';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function App() {
+  return (
+    <>
+      <NavbarComponent />
+      <div style={{ paddingTop: '56px' }}>
+        {}
+         <CarouselComponent />
+      </div>
+    </>
+  );
 }
+
+export default App;
