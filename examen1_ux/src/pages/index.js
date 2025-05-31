@@ -14,7 +14,6 @@ export default function Home() {
     <>
       <NavbarComponent />
       <CarouselComponent />
-      <SliderComponent />
     </>
   );
 }
