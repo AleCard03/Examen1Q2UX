@@ -1,7 +1,7 @@
 .card {
   flex: 0 0 auto;
   background: linear-gradient(135deg, #1a1a2e 0%, #23234b 100%);
-  border-radius: 20px;
+  border-radius: 8px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   overflow: hidden;
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s;
@@ -46,14 +46,29 @@
   margin: 0;
 }
 
-.cardFooter {
-  margin-top: auto;
-  padding: 12px 16px;
-  background: rgba(34, 34, 68, 0.85);
-  border-top: 1px solid rgba(255,255,255,0.08);
-  font-size: 0.95rem;
-  color: #b3b3cc;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.newBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ffffff; /* Rojo similar a Netflix */
+  color: rgb(10, 10, 10);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 3; /* Asegura que esté por encima del número */
+}
+.number {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2px 6px;
+  border-radius: 4px;
+  z-index: 2;
 }

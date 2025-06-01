@@ -21,8 +21,8 @@ const SliderComponent = ({cardsData}) => {
         &lt;
       </button>
       <div className={styles.slider} ref={sliderRef}>
-        {cardsData.map((card) => (
-          <CardComponent key={card.id} image={card.image} title={card.title} />
+        {cardsData.map((card, index) => (
+          <CardComponent key={card.id} image={card.image} title={card.title} isNew={card.isNew} isTop={card.isTop} idx={index+1} />
         ))}
       </div>
       <button className={styles.arrow} onClick={() => scroll('right')}>
