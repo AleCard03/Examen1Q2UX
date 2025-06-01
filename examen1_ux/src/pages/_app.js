@@ -4,16 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from '../components/NavbarComponent';
 import CarouselComponent from '../components/CarouselComponent';
 import Top10SliderComponent from '@/components/Top10SliderComponent';
-import DestacadosSliderComponent from '@/components/DestacadosSliderComponent';
+import CategorySliderComponent from '@/components/CategorySliderComponent';
 import SliderComponent from '@/components/SliderComponent';
-/* const cardsData2 = [
-  { id: 1, title: 'Card 1', image: '/Imagenes/TF3DOTM.jpg' },
-  { id: 2, title: 'Card 2', image: '/Imagenes/Barcelona.jpg' },
-  { id: 3, title: 'Card 3', image: '/Imagenes/BTTF_THUMB.webp' },
-  { id: 4, title: 'Card 4', image: '/Imagenes/HDA.jpg' },
-  { id: 5, title: 'Card 5', image: '/Imagenes/MGS3.jpg' },
-  { id: 6, title: 'Card 6', image: '/Imagenes/DBZ.jpg' },
-]; */
+
 
 const top10Data = [
   { id: 1, title: 'Transformers One', image: '/Imagenes/TFONE.jpg', isTop:true },
@@ -41,6 +34,19 @@ const cardsData = [
   {id: 10,title: "bumblebee",image: '/Imagenes/BBM.jpg',isNew: false },
  
 ];
+const forYou = [
+  {id: 1,title: "El Tiempo Contigo",image: '/Imagenes/TNK.jpg',isNew: true },
+  {id: 2,title: "Fullmetal Alchemist Brotherhood",image: '/Imagenes/FMA.jpg',isNew: false },
+  {id: 3,title: "Dr. House",image: '/Imagenes/DH.jpg',isNew: false },
+  {id: 4, title: 'Dan Da Dan', image: '/Imagenes/DanDaDan.jpg', isNew:true },
+  {id: 5,title: "Supernatural",image: '/Imagenes/SPN.jpg',isNew: false },
+  {id: 6,title: "A Minecraft Movie",image: '/Imagenes/AMCM.jpg',isNew: true },
+  {id: 7,title: "Haikyuu!",image: '/Imagenes/HK.jpg',isNew: true },
+  {id: 8,title: "Death Note",image: '/Imagenes/DN.jpg',isNew: false },
+  {id: 9, title: 'The Dark Knight', image: '/Imagenes/TDK.jpg'},
+  {id: 10, title: 'Breaking Bad', image: '/Imagenes/BrBa.jpg'},
+ 
+];
 
 function App() {
   return (
@@ -50,7 +56,8 @@ function App() {
          <CarouselComponent />
       </div>
      <Top10SliderComponent  cardsData={top10Data}/>
-     <DestacadosSliderComponent cardsData={cardsData}/>
+     <CategorySliderComponent cardsData={cardsData} texto = "Destacados"/>
+     <CategorySliderComponent cardsData={forYou} texto = "Para Tí"/>
     </>
   );
 }
