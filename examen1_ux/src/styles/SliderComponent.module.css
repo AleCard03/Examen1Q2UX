@@ -49,12 +49,11 @@
   transition: opacity 0.3s ease;
   line-height: 1;
 }
-.arrow:hover {
-}
+
 .arrow:first-of-type {
   left: 0;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  padding-left: 16px;
+    padding-left: 16px;
 }
 .arrow:last-of-type {
   right: 0;
@@ -62,6 +61,7 @@
 
   padding-right: 16px;
 }
+
 @media (max-width: 768px) {
   .arrow {
     display: none;
