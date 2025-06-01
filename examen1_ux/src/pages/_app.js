@@ -45,6 +45,7 @@ const forYou = [
   {id: 8,title: "Death Note",image: '/Imagenes/DN.jpg',isNew: false },
   {id: 9, title: 'The Dark Knight', image: '/Imagenes/TDK.jpg'},
   {id: 10, title: 'Breaking Bad', image: '/Imagenes/BrBa.jpg'},
+   {id: 11, title: 'Transformers: Age Of Extinction', image: '/Imagenes/TF4.jpg',isNew: true },
  
 ];
 
