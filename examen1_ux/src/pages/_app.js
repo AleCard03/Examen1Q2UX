@@ -2,6 +2,7 @@ import React from 'react';
 import NavbarComponent from '../components/NavbarComponent';
 import CarouselComponent from '../components/CarouselComponent';
 import Top10SliderComponent from '@/components/Top10SliderComponent';
+import DestacadosSliderComponent from '@/components/DestacadosSliderComponent';
 //import SliderComponent from '@/components/SliderComponent';
 
 //const cardsData = [
@@ -26,6 +27,20 @@ const top10Data = [
   { id: 10, title: 'Code Geass: Lelouch of the Rebellion', image: '/Imagenes/CG.jpg' },
 ];
 
+const cardsData = [
+  {id: 1,title: "The Chosen",image: '/Imagenes/TC.jpg',isNew: false },
+  {id: 2,title: "Coyote Vs ACME",image: '/Imagenes/CVA.jpg',isNew: true },
+  {id: 3,title: "Transformers: Revenge Of The Fallen",image: '/Imagenes/TF2.jpg',isNew: false },
+  {id: 4,title: "Ready Player One",image: '/Imagenes/RP1.jpg',isNew: true },
+  {id: 5,title: "Fullmetal Alchemist Brotherhood",image: '/Imagenes/FMA.jpg',isNew: false },
+  {id: 6,title: "A Minecraft Movie",image: '/Imagenes/AMCM.jpg',isNew: true },
+  {id: 7,title: "The Super Mario Bros Movie",image: '/Imagenes/SMM.jpg',isNew: false },
+  {id: 8,title: "Death Note",image: '/Imagenes/DN.jpg',isNew: false },
+  {id: 9,title: "Forrest Gump",image: '/Imagenes/FG.jpg',isNew: true },
+  {id: 10,title: "bumblebee",image: '/Imagenes/BBM.jpg',isNew: false },
+ 
+];
+
 function App() {
   return (
     <>
@@ -34,6 +49,7 @@ function App() {
          <CarouselComponent />
       </div>
      <Top10SliderComponent  cardsData={top10Data}/>
+     <DestacadosSliderComponent cardsData={cardsData}/>
     </>
   );
 }
