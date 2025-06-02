@@ -1,6 +1,6 @@
-// src/components/NavbarComponent.jsx
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const NavbarComponent = () => {
   return (
@@ -33,14 +33,18 @@ const NavbarComponent = () => {
             <Nav.Link href="#" className="text-white">Niños y Familia</Nav.Link>
           </Nav>
 
-          <Nav className="ms-auto align-items-center gap-2">
-            <span className="text-white fw-semibold">Gunter</span>
+          <Nav className="ms-auto align-items-center gap-3">
+
+            <Nav.Link href="#" className="text-white p-0">
+              <i className="bi bi-search" style={{ fontSize: '1.4rem' }}></i>
+            </Nav.Link>
+            <span className="text-white fw-semibold">Gunther</span>
+
             <Nav.Link
               href="https://www.youtube.com/watch?v=y2tctX1Yd5c"
               target="_blank"
               rel="noopener noreferrer"
               className="p-0"
-              style={{ marginLeft: "0.5rem" }}
             >
               <img
                 src="/Imagenes/profile.jpg"
