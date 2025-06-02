@@ -1,0 +1,227 @@
+.container {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #000000;
+  color: white;
+}
+
+.title {
+  padding-left: 40px;
+  margin-bottom: 16px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sliderContainer:hover .arrow {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slider {
+  flex: 1;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 0 16px;
+  margin: 0 16px;
+  scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 280px; 
+  margin-right: 65px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.imageContainer {
+  position: relative;
+  width: 120%;
+  aspect-ratio: 16 / 9; 
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+.progressBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.progressFill {
+  height: 100%;
+  background-color: #e509d3;
+  transition: width 0.3s ease;
+}
+
+.newBadge {
+   position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ffffff; 
+  color: rgb(10, 10, 10);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 3; 
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.card:hover .playButton {
+  opacity: 1;
+}
+
+.playButton svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.info {
+  padding: 12px 4px;
+}
+
+.itemTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.episode {
+  margin: 4px 0;
+  font-size: 0.85rem;
+  color: #b3b3b3;
+}
+
+.timeLeft {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #b3b3b3;
+}
+
+.arrow {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0);
+  color: white;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 3;
+  transition: opacity 0.3s ease;
+  line-height: 1;
+}
+
+.arrow:first-of-type {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  padding-left: 16px;
+}
+
+.arrow:last-of-type {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  padding-right: 16px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 200px;
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .meta {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #ccc;
+  margin-top: 0.3rem;
+}
+
+.year,
+.rating {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 150px;
+  }
+
+  .itemTitle {
+    font-size: 0.875rem;
+  }
+
+  .episode,
+  .timeLeft {
+    font-size: 0.7rem;
+  }
+}

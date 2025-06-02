@@ -75,7 +75,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: #ffffff; /* Rojo similar a Netflix */
+  background-color: #ffffff; 
   color: rgb(10, 10, 10);
   font-size: 12px;
   font-weight: bold;
@@ -83,7 +83,7 @@
   border-radius: 2px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  z-index: 3; /* Asegura que esté por encima del número */
+  z-index: 3; 
 }
 
 
