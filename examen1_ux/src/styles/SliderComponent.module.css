@@ -3,7 +3,11 @@
   width: 100%;
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   background-color: transparent;
+=======
+  background-color:transparent;
+>>>>>>> 400bb3c3ba8d5f06b5ac2143c55eaebe926609e5
 }
 .sliderContainer:hover .arrow {
   opacity: 1;
