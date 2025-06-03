@@ -13,7 +13,7 @@ El proyecto fue desarrollado como parte del curso de **Experiencia de Usuario** 
    git clone https://github.com/AleCard03/Examen1Q2UX.git \
    cd Examen1Q2UX \
    cd examen1_ux
-2. Instalar Dependencias ->
+2. Instalar Dependencias -> \
    npm install
-3. Ejecutar ->
+3. Ejecutar -> \
    npm run dev
